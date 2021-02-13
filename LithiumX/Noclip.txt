@@ -1,0 +1,17 @@
+noclip = false
+gameGetService('RunService').Steppedconnect(function()
+if noclip then
+game.Players.LocalPlayer.Character.HumanoidChangeState(11)
+end
+end)
+plr = game.Players.LocalPlayer
+mouse = plrGetMouse()
+mouse.KeyDownconnect(function(key)
+
+if key == e then
+noclip = not noclip
+game.Players.LocalPlayer.Character.HumanoidChangeState(11)
+end
+end)
+print('Loaded')
+print('Press E to noclip')
